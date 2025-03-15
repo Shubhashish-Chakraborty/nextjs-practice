@@ -20,7 +20,7 @@ export default function Signup() {
             }
 
 
-            const response = await axios.post("http://localhost:3000/api/v1/auth/user/signup", {
+            const response = await axios.post("/api/v1/auth/user/signup", {
                 username,
                 password
             });
