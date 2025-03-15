@@ -8,7 +8,5 @@ export const GET = () => {
 
 export const POST = async (req:NextRequest) => {
 
-    const body = await req.json();
-
     return NextResponse.json({message: "okay"})
 } 
