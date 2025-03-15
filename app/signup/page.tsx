@@ -35,7 +35,7 @@ export default function Signup() {
                 setSuccessMessage("Signup Failed! Please try again.");
             }
         } catch (error) {
-            setSuccessMessage("Error signing up. Please try again.");
+            setSuccessMessage(`Error signing up. Please try again. ${error}`);
         }
     };
 

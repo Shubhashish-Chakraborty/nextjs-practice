@@ -27,6 +27,6 @@ export const POST = async (req: NextRequest) => {
             message: `${data.username} Signed Up Successfully`
         });
     } catch (error) {
-        return NextResponse.json({ success: false, error: "Signup Failed" }, { status: 500 });
+        return NextResponse.json({ success: false, error: "Signup Failed", E: error }, { status: 500 });
     }
 };
