@@ -4,10 +4,10 @@ const prismaClientSingleton = () => {
   return new PrismaClient()
 }
 
-//@ts-ignore
+//@ts-expect-error
 const prisma = globalThis.prisma ?? prismaClientSingleton()
 
 export default prisma
 
-//@ts-ignore
+//@ts-expect-error
 if (process.env.NODE_ENV !== 'production') globalThis.prisma = prisma
